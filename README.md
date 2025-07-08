@@ -5,7 +5,6 @@
 This project implements a fully connected feedforward neural network for digit recognition (0–9).
 The model is trained on the MNIST dataset (provided as a CSV file).
 
-
 ## How It Works
 
 * The network learns to recognize handwritten digits (0 to 9)
@@ -50,6 +49,12 @@ This is a fully connected feedforward network:
 * Shows the result in the interface
 
 
+### Results
+
+* After training and testing, prediction results and logs are saved in the `results/` folder
+* You can check this folder to review output examples and performance of the model
+
+
 ## Example Output (from `main.py`)
 
 ```
@@ -71,8 +76,7 @@ example 2: real = 0, predicted = 0, confidence = 0.9845
 * NumPy
 * Matplotlib (optional, for plotting)
 * Tkinter (for GUI)
-
-
+  
 
 ### Running the Project
 
