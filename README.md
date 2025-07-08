@@ -1,11 +1,12 @@
 
+
 # Digit Recognition Neural Network
 
 This project implements a fully connected feedforward neural network for digit recognition (0–9).
 The model is trained on the MNIST dataset (provided as a CSV file).
 
 
- How It Works
+## How It Works
 
 * The network learns to recognize handwritten digits (0 to 9)
 * Each digit image is a vector of pixel values, normalized between 0 and 1
@@ -14,8 +15,7 @@ The model is trained on the MNIST dataset (provided as a CSV file).
 * Training is done via backpropagation with gradient descent
 
 
-
-##  Network Architecture
+## Network Architecture
 
 This is a fully connected feedforward network:
 
@@ -24,11 +24,12 @@ This is a fully connected feedforward network:
 * Hidden layer 2: 64 neurons (ReLU)
 * Output layer: 10 neurons (one per digit, softmax activation)
 
+
 # File Overview
 
 ### `neural_net.py`
 
-* Contains the main **NeuralNetwork** class
+* Contains the main NeuralNetwork class
 * Implements forward pass, backpropagation, activation functions, training logic
 * Includes `.save()` and `.load()` to save/load models as `.json`
 
@@ -48,7 +49,8 @@ This is a fully connected feedforward network:
 * Predicts the drawn digit using the trained model
 * Shows the result in the interface
 
-Example Output (from `main.py`)
+
+## Example Output (from `main.py`)
 
 ```
 Epoch 1/20 completed
@@ -60,6 +62,7 @@ Accuracy: 91.35%
 Predictions:
 example 1: real = 7, predicted = 7, confidence = 0.9923
 example 2: real = 0, predicted = 0, confidence = 0.9845
+```
 
 
 ### Requirements
@@ -68,6 +71,7 @@ example 2: real = 0, predicted = 0, confidence = 0.9845
 * NumPy
 * Matplotlib (optional, for plotting)
 * Tkinter (for GUI)
+
 
 
 ### Running the Project
